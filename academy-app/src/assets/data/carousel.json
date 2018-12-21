@@ -1,0 +1,17 @@
+[
+  {
+    "phone_name": "HUAWEI Mate20 Pro",
+    "path": "/assets/imgs/phone1.png",
+    "info": "With a 2-year agreement<br>on a Medium plan<sup>1</sup>"
+  },
+  {
+    "phone_name": "HUAWEI P20 Pro",
+    "path": "/assets/imgs/phone2.png",
+    "info": "With a 2-year agreement<br>on a Small plan<sup>2</sup>"
+  },
+  {
+    "phone_name": "Samsung Galaxy A8",
+    "path": "/assets/imgs/phone3.png",
+    "info": "With a 2-year agreement<br>on a Medium plan<sup>3</sup>"
+  }
+]

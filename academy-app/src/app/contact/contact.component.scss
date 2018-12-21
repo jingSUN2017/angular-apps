@@ -1,0 +1,50 @@
+label{
+  display: block;
+
+  input, textarea{
+    display: block;
+    //width: 50%;
+    margin-bottom: 20px;
+    //padding: 1em;
+  }
+
+  #user-name, #user-input{
+    &:visited, &:focus, &:active, &:hover{
+      border-color: black;
+      outline: none;
+      border-width: 1.5px;
+    }
+  }
+  .error{
+    margin-top: -20px;
+    background: yellow;
+    padding: .5em;
+    display: inline-block;
+    font-size: .9em;
+    margin-bottom: 20px;
+  }
+}
+
+.cta{
+  background: #7700FF;
+  border: none;
+  color: white;
+  outline: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: .5em;
+  cursor: pointer;
+  font-family: 'Montserrat';
+}
+
+.results{
+  margin-top: 50px;
+
+  strong{
+    display: block;
+  }
+  span{
+    margin-bottom: 20px;
+    display: block;
+  }
+}
