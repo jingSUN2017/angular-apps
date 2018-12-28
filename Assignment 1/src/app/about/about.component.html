@@ -1,0 +1,57 @@
+<div id="mobile-landing-carousel">
+  <div class="container">
+    <div class="">
+      <h1>About</h1>
+      <h2 class="title-heading">Featured Devices</h2>
+      <div class="">
+        <div class="slider-container">
+          <!--slider start-->
+          <ngb-carousel>
+            <ng-template ngbSlide>
+              <h3>{{phones[0].phone_name}}</h3>
+              <img [src]="phones[0].path" alt={{phones[0].phone_name}}>
+              <div class="details-wrapper">
+                <div class="price-container">
+                  <sup class="dollar">$</sup><span class="price">0</span>
+                </div>
+                <div class="copy">
+                  <p [innerHTML]="phones[0].info"></p>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <h3>{{phones[1].phone_name}}</h3>
+              <img [src]="phones[1].path" alt={{phones[1].phone_name}}>
+              <div class="details-wrapper">
+                <div class="price-container">
+                  <sup class="dollar">$</sup><span class="price">0</span>
+                </div>
+                <div class="copy">
+                  <p [innerHTML]="phones[1].info"></p>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <h3>{{phones[2].phone_name}}</h3>
+              <img [src]="phones[2].path" alt={{phones[2].phone_name}}>
+              <div class="details-wrapper">
+                <div class="price-container">
+                  <sup class="dollar">$</sup><span class="price">0</span>
+                </div>
+                <div class="copy">
+                  <p [innerHTML]="phones[2].info"></p>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+          <!--slider end-->
+          <div class="all-devices">
+            <div class="border-bottom"></div>
+            <p>Check out our great phones & devices.</p>
+            <a class="btn view-plans-btn-yellow all-phones" href="https://www.fido.ca/nac/#/choose-phone">All phones & devices</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

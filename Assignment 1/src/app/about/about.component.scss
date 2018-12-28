@@ -1,0 +1,95 @@
+#mobile-landing-carousel{
+  padding-left: 25px;
+  h3{
+    color: #7c6900;
+  }
+  .title-heading {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 26px;
+    margin-top: -10px;
+  }
+  .border-top {
+    height: 2.4px;
+    width: 340px;
+    background-color: #5b6770;
+    margin-bottom: -15px;
+  }
+  .details-wrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-direction:row;
+    .price-container{
+      .dollar{
+        top: -1em;
+        position: relative;
+        font-size: 20px;
+      }
+      .price{
+        font-size: 46px;
+      }
+    }
+    .copy{
+      margin-top: 14px;
+      margin-left: 60px;
+      font-size: 18px;
+      font-family: 'yolo', Arial;
+      line-height: 1.42857143;
+    }
+  }
+  .all-devices{
+    .border-bottom{
+      border: 1px dashed #b19800;
+      background-color: transparent;
+      opacity: 0.61;
+      width: 340px;
+    }
+    p{
+      margin-top: 25px;
+      margin-bottom: 0px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+    }
+    .view-plans-btn-yellow{
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 23px;
+      border: 3px solid #ffe600;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+      padding: 0 10px 0 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: black;
+    }
+  }
+
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  display: none;
+}
+.carousel-indicators{
+  width: 160px;
+  margin: 0px 22px 64px 22px;
+
+  & li{
+    position: relative;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: #fff;
+    transition: all .5s cubic-bezier(.4,0,.2,1);
+    &.active{
+      background-color: #00afab;
+    }
+  }
+}
+
+

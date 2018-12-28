@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <h1>Home</h1>
+    <ul *ngIf="phones">
+      <li *ngFor="let phone of phones">
+        <img [src]="phone.path">
+        <p [innerHTML]="phone.info"></p>
+      </li>
+    </ul>
+  </div>
+</div>
