@@ -16,6 +16,10 @@ describe('MessageService', () => {
         httpMock = TestBed.get(HttpTestingController);
     });
 
+    afterEach(() => {
+        httpMock.verify();
+    });
+
     it('should add term into the message array', () => {
         service.add('testing with jest');
         expect(service.messages).toEqual(['testing with jest']);
@@ -31,3 +35,4 @@ describe('MessageService', () => {
         expect(service.clear()).toBeUndefined();
     });
 });
+

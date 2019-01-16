@@ -15,9 +15,9 @@ describe('MessagesComponent', () => {
        expect(app).toBeTruthy();
     });
     it('should empty the message array the message service clear function ', () => {
+        /* get testing version of the MessagesComponent */
         const fixture = TestBed.createComponent(MessagesComponent);
         const messageService = fixture.debugElement.injector.get(MessageService);
-        fixture.detectChanges();
         expect(messageService.clear()).toBeUndefined();
     });
 });

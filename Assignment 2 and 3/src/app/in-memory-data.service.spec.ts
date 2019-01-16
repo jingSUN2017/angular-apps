@@ -16,6 +16,10 @@ describe('InMemoryDataService', () => {
         httpMock = TestBed.get(HttpTestingController);
     });
 
+    afterEach(() => {
+        httpMock.verify();
+    });
+
     it('should include totally 10 heroes in the DB', () => {
         expect(service.createDb().heroes.length).toEqual(10);
     });
