@@ -2,6 +2,7 @@ import { TestBed, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HeroService } from './hero.service';
 import { MessageService} from './message.service';
+import {  HttpErrorResponse } from '@angular/common/http'
 
 describe('HeroService', () => {
     let injector: TestBed;
@@ -143,6 +144,15 @@ describe('HeroService', () => {
             req.flush(dummyHero);
         });
     });
+
+/*/!*    describe('#errorHandle', () =>{
+        it('should return an observable of undefined and print error to console', () => {
+            const result = service.handleError(new HttpErrorResponse({ error: 'Error occurs' }), 'test method')
+
+            expect(console.error).toHaveBeenCalled();
+            result.subscribe(value => expect(value).toBeUndefined());
+        *!/});*/
+   /* });*/
 });
 
 
